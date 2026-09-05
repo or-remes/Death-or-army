@@ -869,8 +869,8 @@ function renderArmyResult() {
 function shareJob() {
   if (currentJobIndex === null) return;
   const deathCount = getCount('deathCount');
-  const gameUrl = window.location.href;
-  const text = `נכנסתי מתחת לאלונקה🪖 אבל לפני זה מתתי ${deathCount} פעמים ב'נמות ולא נתגייס'!\nשחקו גם: ${gameUrl}`;
+  const gameUrl = 'https://death-or-army.remesor.workers.dev';
+  const text = `נכנסתי מתחת לאלונקה🪖 אחרי שמתתי ${deathCount} פעמים ב'נמות ולא נתגייס'!\nשחקו גם: ${gameUrl}`;
   window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
 }
 
